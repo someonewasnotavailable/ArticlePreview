@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Gadugi;
+}
+
+body{
+    margin: 0px;
+}
+
+.bg{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(237, 242, 248);
+    display: flex;
+    justify-content: center;
+}
+
+.article{
+    width: 650px;
+    height: 31vh;
+    background-color: white;
+    align-self: center;
+    /* justify-self: center; */
+    display: flex;
+}
+
+.deskimg{
+    height: 31vh;
+    width: 36%;
+    overflow: hidden;
+}
+
+.deskimg img{
+    width: 115%;
+    height: 100%;
+    /* margin-left: 15%; */
+}
+
+.articletextcontent{
+    /* border: 1px solid black; */
+    margin-top: 20px;
+    width: 52%;
+    margin-left: 7%;
+}
+
+.articletextcontent h1{
+    font-size: 20px;
+    font-weight: normal;
+    color: rgb(77, 84, 100);
+    margin-bottom: 10px;
+}
+
+.articletextcontent h2{
+    font-size: 13px;
+    font-weight: normal;
+    color: rgb(107, 118, 142);
+    margin-bottom: 20px;
+}
+
+.profileanddate{
+    /* border: 1px solid black; */
+    position: relative;
+    display: flex;
+    gap: 10px;
+}
+
+.profile{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile img{
+    width: 100%;
+    height: 100%;
+}
+
+.date p{
+    font-weight: normal;
+    color: rgb(77, 84, 100);
+    font-size: 14px;
+}
+
+.date h6{
+    font-weight: normal;
+    color: rgb(107, 118, 142);
+    font-size: 10px;
+}
+
+.icon-share-box{
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    background-color: rgb(236, 240, 249);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    right: -2%;
+    cursor: pointer;
+}
+
+.icon-share{
+    width: 12px;
+    height: 11px;
+}
+
+.icon-share-box.active{
+    background-color: rgb(111,125,150);
+}
+
+.icon-share.active{
+    filter: brightness(0) invert(1);
+}
+
+.dropupmenu{
+    display: none;
+}
+
+.dropupmenu.active{
+    height: 5vh;
+    width: 200px;
+    display: flex;
+    background-color: rgb(70, 80, 97);
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -207%;
+    right: -30%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.dropupmenu p{
+    color: white;
+    font-weight: normal;
+    font-size: 10px;
+    margin-right: 10px;
+}
+
+.dropupmenu img{
+    background-color: rgb(111,125,150);
+    /* transform: scale(10); */
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.triangle{
+    display: none;
+}
+
+.triangle.active{
+    display: block;
+    border-top: 15px solid rgb(70,80,97);
+    border-right: 13px solid transparent;
+    border-left: 13px solid transparent;
+    /* background-color: black; */
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: -70%;
+    right: -2%;
+}
+
+.twitter img{
+    background-color: rgb(70,80,97);
+}
+
+.pinterest img{
+    background-color: rgb(70,80,97)
+}
